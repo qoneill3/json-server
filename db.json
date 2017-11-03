@@ -1,9 +1,12 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    { "id": 1, "title": "json-server", "author": "typicode" },
+    {"id": 2, "title": "I'm doing something", "author": "Quinn"},
+    {"id": 3, "title": "Here we go, here's some posts", "author": "Quinn"}
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "cool server, guys", "postId": 2}
   ],
   "profile": { "name": "typicode" }
 }

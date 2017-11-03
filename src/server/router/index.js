@@ -47,7 +47,14 @@ module.exports = (source, opts = { foreignKeySuffix: 'Id' }) => {
   // GET /db
   router.get('/db', (req, res) => {
     res.jsonp(db.getState())
-  })
+  });
+
+  // GET /home.ejs
+  router.get('/home', (req, res) => {
+    res.sendFile('../public/home.ejs');
+  });
+
+
 
   // Handle /:parent/:parentId/:resource
   router.use(nested(opts))
